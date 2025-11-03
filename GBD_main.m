@@ -1,4 +1,5 @@
 % 生成一个顺序读取的文件列表-erPath, fileExtension)
+function fileStruct = generateFileListByFolder(folderPath, fileExtension)
     % 支持递归查找子文件夹中的指定扩展名文件，并按文件夹分组
     % 防止文件夹名中有非法字符，使用matlab.lang.makeValidName进行转换
     if isempty(fileExtension)
